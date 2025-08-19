@@ -1,0 +1,92 @@
+body {
+    /* tirar as bordas padrões*/
+    margin: 0;
+    background-color: rgb(20, 12, 50);
+}
+
+
+/*estilo do cabeçalho*/
+header {
+    background-color: black;
+    color: rgb(0, 0, 0);
+    /* Coloca os textos na mesma linha */
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    /* Permite quebras  */
+
+}
+
+.logo {
+    font-size: 1, 5em;
+    font-size: bold;
+    color: rgb(50, 85, 145);
+
+}
+
+/* só os liks dentro de nav*/
+nav a {
+    color: rgb(89, 86, 239);
+    /* tira o sublinhado*/
+    text-decoration: none;
+    margin-left: 20px;
+
+}
+
+.banner {
+    background: url('https://i.pinimg.com/1200x/be/30/ee/be30eea3d0b9a532e4c83b6196d03180.jpg') center/cover;
+    height: 400px;
+
+}
+
+.section-title {
+    font-size: 1.8em;
+    padding: 20px;
+    color: rgb(57, 76, 154);
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 20px 30px;
+}
+
+.movie-card {
+    background-color: rgb(55, 55, 119);
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-card img {
+    height: 450px;
+    background-color: rgb(129, 140, 170);
+    width: 100%;
+    object-fit: cover;
+}
+
+.movie-card h3 {
+    font-size: 1.1em;
+    margin: 10px 0 5px 0;
+}
+
+.rating {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(136, 166, 193);
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.movie-card span {
+    display: block;
+    font-size: 1em;
+    color: rgb(92, 114, 134);
+    margin-bottom: 10px;
+}
